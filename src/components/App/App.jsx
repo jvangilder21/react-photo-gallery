@@ -1,6 +1,10 @@
 import React from 'react';
 import './App.css';
 
+// Components
+import GalleryItem from '../GalleryItem/GalleryItem';
+import GalleryList from '../GalleryList/GalleryList';
+
 function App() {
     return (
       <div className="App">
