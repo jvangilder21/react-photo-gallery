@@ -15,7 +15,7 @@ function App() {
     fetchImage()
   }, []);
 
-  const [imageList, setImageList] = useState('');
+  const [imageList, setImageList] = useState([]);
 
   const fetchImage = () => {
     axios.get('/gallery')
@@ -27,6 +27,7 @@ function App() {
     console.log(error);
     })
 };
+// console.log(imageList);
 
     return (
       <div className="App">
@@ -34,7 +35,8 @@ function App() {
           <h1 className="App-title">Gallery of My Life</h1>
         </header>
         <p>Gallery goes here</p>
-        <img src="images/goat_small.jpg"/>
+        <GalleryList image={imageList}/>
+        
       </div>
     );
 }
