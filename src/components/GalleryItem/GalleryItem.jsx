@@ -29,7 +29,8 @@ const handleLike = () => {
          <>
             {showDescription ? ( <p onClick={toggleDescription}>
                 {description}</p> ) : ( <img src={path} 
-                alt={description} onClick={toggleDescription} /> ) }
+                alt={description} onClick={toggleDescription} 
+                style={{width:'200px', height: '200px' }}/> ) }
             
             
             <br/>
